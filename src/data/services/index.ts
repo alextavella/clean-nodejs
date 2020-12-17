@@ -1,1 +1,1 @@
-export * from './last-ranking-loader'
+export * from './load-last-ranking-service'

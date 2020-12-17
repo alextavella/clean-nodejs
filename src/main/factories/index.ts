@@ -1,1 +1,2 @@
-export * from './load-last-ranking-controller'
+export * from './controllers'
+export * from './services'

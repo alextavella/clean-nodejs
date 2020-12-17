@@ -1,18 +1,20 @@
 import { ILoadLastRankingRepository } from '@/data/contracts'
-import { RankingScore } from '@/domain/entities'
 import { RankingUnavailableError } from '@/domain/errors'
+import { RankingScoreModel } from '@/domain/models'
 import { ILastRankingLoader } from '@/domain/usecases'
 
-export class LastRankingLoaderService implements ILastRankingLoader {
+export class LoadLastRankingService implements ILastRankingLoader {
   constructor(
     private readonly loadLastRankingRepository: ILoadLastRankingRepository,
   ) {}
 
-  async load(): Promise<RankingScore[]> {
+  async load(): Promise<RankingScoreModel[]> {
     if (new Date().getHours() > 22) {
       throw new RankingUnavailableError()
     }
 
-    return this.loadLastRankingRepository.loadLastRanking()
+    const response = await this.loadLastRankingRepository.loadLastRanking()
+
+    return response as RankingScoreModel[]
   }
 }

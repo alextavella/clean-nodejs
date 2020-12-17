@@ -1,5 +1,5 @@
-import { RankingScoreModel } from '@/data/models'
+import { RankingScoreEntity } from '@/data/entities'
 
 export interface ILoadLastRankingRepository {
-  loadLastRanking: () => Promise<RankingScoreModel[]>
+  loadLastRanking: () => Promise<RankingScoreEntity[]>
 }

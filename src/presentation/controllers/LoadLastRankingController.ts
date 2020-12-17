@@ -1,6 +1,7 @@
 import { ILastRankingLoader } from '@/domain/usecases'
+import { HttpResponse } from '@/presentation/contracts'
 import { Controller } from '@/presentation/contracts/controller'
-import { HttpResponse, ok, serverError } from '@/presentation/contracts/http'
+import { ok, serverError } from '@/presentation/helpers'
 import { RankingScoreViewModel } from '@/presentation/view-models'
 
 export class LoadLastRankingController implements Controller {
