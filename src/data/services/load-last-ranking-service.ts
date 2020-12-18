@@ -9,7 +9,7 @@ export class LoadLastRankingService implements ILastRankingLoader {
   ) {}
 
   async load(): Promise<RankingScoreModel[]> {
-    if (new Date().getHours() > 22) {
+    if (new Date().getHours() > 24) {
       throw new RankingUnavailableError()
     }
 

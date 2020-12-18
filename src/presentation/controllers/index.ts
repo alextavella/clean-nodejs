@@ -1,1 +1,1 @@
-export * from './LoadLastRankingController'
+export * from './load-last-ranking-controller'

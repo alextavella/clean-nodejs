@@ -1422,7 +1422,7 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@26.x", "@types/jest@^26.0.19":
+"@types/jest@26.0.19", "@types/jest@26.x":
   version "26.0.19"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.19.tgz#e6fa1e3def5842ec85045bd5210e9bb8289de790"
   integrity sha512-jqHoirTG61fee6v6rwbnEuKhpSKih0tuhqeFbCmMmErhtu3BYlOZaXWjffgOstMM4S/3iQD31lI5bGLTrs97yQ==
@@ -1536,6 +1536,14 @@
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
+
+"@types/swagger-ui-express@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@types/swagger-ui-express/-/swagger-ui-express-4.1.2.tgz#cfc884904a104c3193f46f423d04ee0416be1ef4"
+  integrity sha512-t9teFTU8dKe69rX9EwL6OM2hbVquYdFM+sQ0REny4RalPlxAm+zyP04B12j4c7qEuDS6CnlwICywqWStPA3v4g==
+  dependencies:
+    "@types/express" "*"
+    "@types/serve-static" "*"
 
 "@types/ws@^7.0.0":
   version "7.4.0"
@@ -4548,7 +4556,7 @@ jest-worker@^26.6.2:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jest@^26.6.3:
+jest@26.6.3:
   version "26.6.3"
   resolved "https://registry.yarnpkg.com/jest/-/jest-26.6.3.tgz#40e8fdbe48f00dfa1f0ce8121ca74b88ac9148ef"
   integrity sha512-lGS5PXGAzR4RF7V5+XObhqz2KZIDUA1yD0DG6pBVmy10eh0ZIXQImRuzocsI/N2XZ1GrLFwTS27In2i2jlpq1Q==
@@ -6360,6 +6368,18 @@ supports-hyperlinks@^2.0.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
+swagger-ui-dist@^3.18.1:
+  version "3.38.0"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-3.38.0.tgz#fd7c6c04f2eb2dbfedd94722aa3148f3bf354cb5"
+  integrity sha512-sselV8VY6f1BBauY9Sdmwz0jVaWTnGuHQWei7BaTpiUrLcoEUdmmK5bKefLXiwq+dx//es2S8mOvUS+tcXDsKg==
+
+swagger-ui-express@^4.1.5:
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/swagger-ui-express/-/swagger-ui-express-4.1.5.tgz#114f3ce017ca6d6069d960ea8ffef677784b6f2f"
+  integrity sha512-hs9OqBu2jwmhYyFUhdTiwurvbZC+bq2XnWmmbYymVdwhgJCcGkLdnqymX24ZYUve2nkYSvKPEDCo20ZF+vyw9A==
+  dependencies:
+    swagger-ui-dist "^3.18.1"
+
 symbol-observable@^1.0.4:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
@@ -6495,7 +6515,7 @@ ts-invariant@^0.4.0:
   dependencies:
     tslib "^1.9.3"
 
-ts-jest@^26.4.4:
+ts-jest@26.4.4:
   version "26.4.4"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.4.tgz#61f13fb21ab400853c532270e52cc0ed7e502c49"
   integrity sha512-3lFWKbLxJm34QxyVNNCgXX1u4o/RV0myvA2y2Bxm46iGIjKlaY0own9gIckbjZJPn+WaJEnfPPJ20HHGpoq4yg==
