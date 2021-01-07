@@ -3,7 +3,7 @@ import { makeLoadLastRankingController } from '@/main/factories'
 
 export default {
   Query: {
-    lastRanking: (): Promise<any> =>
+    lastRanking: async (): Promise<any> =>
       adaptResolver(makeLoadLastRankingController()),
   },
 }

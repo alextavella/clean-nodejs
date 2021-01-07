@@ -15,6 +15,6 @@ export class LoadLastRankingService implements ILastRankingLoader {
 
     const response = await this.loadLastRankingRepository.loadLastRanking()
 
-    return response as RankingScoreModel[]
+    return response
   }
 }

@@ -6,8 +6,9 @@ module.exports = {
   },
   extends: [
     'standard-with-typescript',
-    'prettier/@typescript-eslint',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'prettier/@typescript-eslint',
   ],
   parserOptions: {
     project: './tsconfig.json',
@@ -22,6 +23,11 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/no-misused-promises': 'off',
     '@typescript-eslint/no-namespace': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    'no-useless-escape': 'off',
     'import/export': 'off',
   },
 }
